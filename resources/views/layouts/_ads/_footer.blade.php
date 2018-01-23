@@ -1,13 +1,9 @@
-@if (config('services.google.ad_sense.enabled'))
+@if ($code = config('services.bsa.cpm_code'))
     <div class="container" style="text-align:center;overflow:hidden;">
         <hr>
-        <ins class="adsbygoogle"
-             style="display:block;margin:0 auto;max-width:728px;max-height:90px"
-             data-ad-client="{{ config('services.google.ad_sense.client') }}"
-             data-ad-slot="{{ config('services.google.ad_sense.unit_footer') }}"
-             data-ad-format="auto"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        <!-- BuySellAds Zone Code -->
+        <div id="bsap_{{ config("services.bsa.footer_code") }}" class="bsarocks bsap_{{ $code }}"
+             style="display:block;margin:0 auto;max-width:728px;max-height:90px"></div>
+        <!-- End BuySellAds Zone Code -->
     </div>
 @endif

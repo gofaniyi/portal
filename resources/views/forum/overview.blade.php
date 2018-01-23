@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="col-md-9">
-            @include('layouts._ads._carbon')
+            @include('layouts._ads._bsa-cpc')
 
             @if (count($threads))
                 @foreach ($threads as $thread)

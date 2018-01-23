@@ -59,8 +59,11 @@ return [
         ],
     ],
 
-    'carbon' => [
-        'code' => env('CARBON_CODE'),
+    'bsa' => [
+        'cpc_code' => env('BSA_CPC_CODE'),
+        'cpm_code' => env('BSA_CPM_CODE'),
+        'footer_code' => env('BSA_FOOTER_CODE'),
+        'sidebar_code' => env('BSA_SIDEBAR_CODE'),
     ],
 
 ];
